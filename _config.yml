@@ -68,6 +68,9 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+#I think this includes my _pages directory? I just wonder whether or not it's redundant...
+include: ["_pages"]
+
 # Social Sharing
 twitter:
   username               : "reazh1992"
@@ -279,3 +282,11 @@ defaults:
       comments: # true
       share: true
       related: true
+
+  # _pages
+   - scope:
+      path: ""
+      type: pages
+   - values:
+      layout: single
+      author_profile: true
